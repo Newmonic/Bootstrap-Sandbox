@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <Title>Title</Title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    -->
+    <!-- Latest compiled and minified Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../CSS/sidebar.css">
+</head>
+
+<body>
+    <div class="container-fluid" id="wrapper">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+
+                <!-- Logo -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#tpbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a href="#" class="navbar-brand">Sandbox</a>
+                </div>
+
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse" id="tpbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <!-- Dropdown Menu Item -->
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Site Navigation <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#Headers">Headers</a></li>
+                                <li><a href="#CTS">Common Text Styles</a></li>
+                                <li><a href="#Grid">Grid</a></li>
+                                <li><a href="#bquote">Blockquote</a></li>
+                                <li><a href="#dl-list">Lists with dl, dt, and dd tags</a></li>
+                                <li><a href="#pretag">Code Examples with pre tag</a></li>
+                                <li><a href="#tbls">Tables</a></li>
+                                <li><a href="#imgvid">Images &amp Video</a></li>
+                                <li><a href="#nvbr">Navbars</a></li>
+                                <li><a href="#wl">Wells &amp Alerts</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                          <div class="row" id="sb-btn">
+                            <div class="col-lg-12">
+                              <a href="#" class="btn btn-success" id="menu-tgl">Toggle Sidebar</a>
+                            </div>
+                          </div>
+                        </li>
+                    </ul>
+                    <!-- Right Aligned Items -->
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+
+
+        <div id="sbwrap">
+            <ul class="sidebar-nav">
+                <li><a href="#Headers">Headers</a></li>
+                <li><a href="#CTS">Common Text Styles</a></li>
+                <li><a href="#Grid">Grid</a></li>
+                <li><a href="#bquote">Blockquote</a></li>
+                <li><a href="#dl-list">Lists with dl, dt, and dd tags</a></li>
+                <li><a href="#pretag">Code Examples with pre tag</a></li>
+                <li><a href="#tbls">Tables</a></li>
+                <li><a href="#imgvid">Images &amp Video</a></li>
+                <li><a href="#nvbr">Navbars</a></li>
+                <li><a href="#wl">Wells &amp Alerts</a></li>
+            </ul>
+        </div>
+
+        <div id="pgwrap">
+            <div class="container-fluid">
+
+                    <h1><b>Bootstrap Info &amp Examples</b></h1>
+                    <h1>Everything is wrapped in div class="container-fluid" tag</h1>
+                    <h2 id="Headers">Headers</h2>
+                    <h1>This is Header 1 using h1 tag</h1>
+                    <h2>This is Header 2 using h2 tag</h2>
+                    <h3>This is Header 3 using h3 tag</h3>
+                    <h4>This is Header 4 using h4 tag</h4>
+                    <h5>This is Header 5 using h5 tag</h5>
+                    <h6>This is Header 6 using h6 tag</h6>
+                    <h2 id="CTS">Common Text Styles</h2>
+                    <h3>text-</h3>
+                    <p class="text-center">text-center</p>
+                    <p class="text-left">text-left</p>
+                    <p class="text-right">text-right</p>
+                    <p class="text-justify">text-justify</p>
+                    <p class="text-muted">text-muted</p>
+                    <p class="text-primary">text-primary</p>
+                    <p class="text-success">text-success</p>
+                    <p class="text-info">text-info</p>
+                    <p class="text-warning">text-warning</p>
+                    <p class="text-danger">text-danger</p>
+                    <h3>bg-</h3>
+                    <p class="bg-primary">bg-primary</p>
+                    <p class="bg-success">bg-success</p>
+                    <p class="bg-info">bg-info</p>
+                    <p class="bg-warning">bg-warning</p>
+                    <p class="bg-danger">bg-danger</p>
+                    <h2 id="Grid">Grid using div class="row" &amp class="col-md-#"</h2>
+                    <div class="row">
+                        <div class="col-md-2" style="background-color: red">div class="col-md-2" style="background-color: Red"</div>
+                        <div class="col-md-4" style="background-color: green">div class="col-md-4" style="background-color: Green"</div>
+                        <div class="col-md-6" style="background-color: blue"><mark>div class="col-md-6" style="background-color: Blue"</mark></div>
+                    </div>
+                    <h2 id="bquote">Blockquote</h2>
+                    <blockquote>
+                        <p>I hate pickles!</p>
+                        <footer>Stephen</footer>
+                    </blockquote>
+                    <h2 id="dl-list">List using dl, dt, and dd tags</h2>
+                    <dl>
+                        <dt> Components of bootstrap
+                          <dd>- css</dd>
+                          <dd>- fonts</dd>
+                          <dd>- js</dd>
+                        </dt>
+                    </dl>
+                    <h2>Code Example Using pre tag</h2>
+                    <pre>&lt;div class="col-md-4" style="background-color: red"&gt;Red&lt;/div&gt;<br>&lt;div class="col-md-4" style="background-color: green"&gt;Green&lt;/div&gt;<br>&lt;div class="col-md-4" style="background-color: blue"&gt;&lt;mark&gt;Blue&lt;/mark&gt;&lt;/div&gt;</pre>
+                    <h2 id="tbls"><mark>Table Examples below built with table, thead, tbody, tr, &amp td tags</mark></h2>
+                    <h2>Simple Favorite Games Table w/ class="table"</h2>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <td><b>Title</b></td>
+                                <td><b>System</b></td>
+                                <td><b>Release Date</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dota 2</td>
+                                <td>Steam</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Zelda: BotW</td>
+                                <td>Nintendo Switch</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy VI</td>
+                                <td>Super NES</td>
+                                <td>1994</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Condensed Favorite Games Table w/ class="table-condensed"</h2>
+                    <table class="table-condensed">
+                        <thead>
+                            <tr>
+                                <td><b>Title</b></td>
+                                <td><b>System</b></td>
+                                <td><b>Release Date</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dota 2</td>
+                                <td>Steam</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Zelda: BotW</td>
+                                <td>Nintendo Switch</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy VI</td>
+                                <td>Super NES</td>
+                                <td>1994</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Condensed Favorite Games Table w/ class="table table-condensed"</h2>
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <td><b>Title</b></td>
+                                <td><b>System</b></td>
+                                <td><b>Release Date</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dota 2</td>
+                                <td>Steam</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Zelda: BotW</td>
+                                <td>Nintendo Switch</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy VI</td>
+                                <td>Super NES</td>
+                                <td>1994</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2>Striped Favorite Games Table w/ class="table table-striped"</h2>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <td><b>Title</b></td>
+                                <td><b>System</b></td>
+                                <td><b>Release Date</b></td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dota 2</td>
+                                <td>Steam</td>
+                                <td>2011</td>
+                            </tr>
+                            <tr>
+                                <td>Zelda: BotW</td>
+                                <td>Nintendo Switch</td>
+                                <td>2017</td>
+                            </tr>
+                            <tr>
+                                <td>Final Fantasy VI</td>
+                                <td>Super NES</td>
+                                <td>1994</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="imgvid">Images &amp Video</h2>
+                    <h3>Images</h3>
+                    <img src="../IMG/Vicious.jpg" class="img-responsive" width="230" height="230">
+                    <p>img src="../.." class="img-responsive" width="230" height="230"</p>
+                    <img src="../IMG/Vicious.jpg" class="img-rounded" width="230" height="230">
+                    <p>img src="../.." class="img-rounded" width="230" height="230"</p>
+                    <img src="../IMG/Vicious.jpg" class="img-thumbnail" width="230" height="230">
+                    <p>img src="../.." class="img-thumbnail" width="230" height="230"</p>
+                    <img src="../IMG/Vicious.jpg" class="img-circle" width="230" height="230">
+                    <p>img src="../.." class="img-circle" width="230" height="230"</p>
+                    <h3>Video</h3>
+                    <h4>Built with div class="embed-responsive embed-responsive-16by9" &amp iframe class="embed-responsive-item"</h4>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="http://www.youtube.com/embed/qIULMnbH2-o"></iframe>
+                    </div>
+                    <h2 id="nvbr">Navbar</h2>
+                    <h3>Nav class="navbar navbar-default"</h3>
+                    <nav class="navbar navbar-default">
+                        <div class="navbar-header">
+                            <a href="#" class="navbar-brand">Sandbox</a>
+                        </div>
+                        <div>
+                            <ul class="nav navbar-nav">
+                                <li class="active"><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <h3>Nav class="navbar navbar-inverse w/dropdown"</h3>
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <a href="#" class="navbar-brand">Sandbox</a>
+                        </div>
+                        <div>
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">My Profile <span class="caret"></span></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Friends</a></li>
+                                <li><a href="#">Photos</a></li>
+                                <li><a href="#">Settings</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                    <h3>Nav class="navbar navbar-inverse w/ toggle button"</h3>
+                    <nav class="navbar navbar-inverse">
+                      <div class="container-fluid">
+                        <div class="navbar-header">
+                          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                          </button>
+                          <a href="#" class="navbar-brand">Sandbox</a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="mainNavBar">
+                          <ul class="nav navbar-nav">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Contact</a></li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Logout</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </nav>
+                    <h2 id="wl">Wells &amp Alerts</h2>
+                    <div class="well">
+                      Wells have borders and grey background.  Use div class="well" to create.
+                    </div>
+                    <div class="well well-sm">
+                      Small wells have borders and grey background, but less padding.  Use div class="well-sm" to create.
+                    </div>
+                    <div class="alert alert-success">
+                      Alerts are like wells with color.  Use div class="alert alert-success" for green theme.
+                    </div>
+                    <div class="alert alert-info">
+                      Alerts are like wells with color.  Use div class="alert alert-info" for blue theme.
+                    </div>
+                    <div class="alert alert-danger">
+                      Alerts are like wells with color.  Use div class="alert alert-danger" for red theme.
+                    </div>
+                    <div class="alert alert-danger">
+                      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Alerts can be dismissed.  Use a href="#" class="close" data-dismiss="alert" aria-label="close"
+                    </div>
+                    <div class="alert alert-danger fade in">
+                      <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>Alerts can fade out when dismissed.  Add "fade in" to the div class="alert"
+                    </div>
+
+            </div>
+        </div>
+
+    </div>
+
+<script>
+  $("#menu-tgl").click( function (e){
+      e.preventDefault();
+      $("#wrapper").toggleClass("menuDisplayed");
+  });
+</script>
+</body>
+
+</html>
